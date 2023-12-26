@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap');
+
+
+/* CSS Reset */
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body Styling */
+
+
+body {
+    height: 100vh;
+    background: linear-gradient(135deg, #2980B9, #6DD5FA);
+    padding-top: 60px;
+}
+
+
+/* Application */
+
+
+.application {
+    width: 90%;
+    max-width: 600px;
+    background-color: #eee;
+    padding: 40px;
+    margin-inline: auto;
+    border-radius: 20px;
+}
+
+
+/* Heading */
+
+
+.heading {
+    font-family: 'Rubik Maps';
+    text-align: center;
+    color: #2980B9;
+    margin-bottom: 25px;
+}
+
+.separation_line {
+    margin-bottom: 35px;
+    border: none;
+    background-color: #2980B9;
+    height: 1.5px;
+}
+
+
+/* Questions AND Options */
+
+
+.question {
+    font-size: 1.4rem;
+    margin-bottom: 30px;
+}
+
+.option {
+    list-style-type: none;
+    font-size: 1.2rem;
+    background-color: #2980B9;
+    color: #fff;
+    padding: 15px;
+    border-radius: 25px;
+    margin-bottom: 10px;
+}
+
+.option:hover {
+    background-color: #fff;
+    color: #085183;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.correct_option {
+    background-color: rgb(48, 247, 48);
+}
+
+.wrong_option {
+    background-color: rgb(252, 54, 54);
+}
+
+/* 
+.option.correct_option:hover {
+    background-color: green;
+    color: #fff;
+}
+
+.option.wrong_option:hover {
+    background-color: red;
+    color: #fff;
+}
+*/
+
+.disabled {
+    cursor: not-allowed;
+}
+
+.disabled .option {
+    pointer-events: none;
+}
+
+
+/* Result Message */
+
+
+.result {
+    font-size: 1.4rem;
+    margin-bottom: 25px;
+    display: none;
+}
+
+
+/* Button */
+
+
+.next_button {
+    background-color: #fff;
+    color: #085183;
+    font-size: 1.5rem;
+    padding: 10px 35px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 35px auto 0;
+    display: none;
+}
+
+.next_button:hover {
+    background-color: #2980B9;
+    color: #fff;
+    font-weight: 500;
+}
